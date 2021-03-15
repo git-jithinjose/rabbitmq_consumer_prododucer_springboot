@@ -1,1 +1,1 @@
-# rabbitmq_consumer_prododucer_springboot
+# rabbitmq_consumer_publisher_springboot
