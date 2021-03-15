@@ -7,6 +7,17 @@ public class Order {
     private String name;
     private int qty;
     private double price;
+    
+	public Order(String orderId, String name, int qty,double price) {
+		this.price=price;
+		this.orderId=orderId;
+		this.name=name;
+		this.qty=qty;
+	}
+	public Order() {
+		
+	}
+    
 	public String getOrderId() {
 		return orderId;
 	}

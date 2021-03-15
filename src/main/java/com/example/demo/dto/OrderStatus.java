@@ -11,6 +11,9 @@ public class OrderStatus {
 		this.message=message;
 		
 	}
+	public OrderStatus() {
+		
+	}
 	public Order getOrder() {
 		return order;
 	}
@@ -29,5 +32,9 @@ public class OrderStatus {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+	
+    public String toString() { 
+        return "msg-->"+this.order.getOrderId()+"---"+this.status+"---"+this.message;
+    } 
     
 }

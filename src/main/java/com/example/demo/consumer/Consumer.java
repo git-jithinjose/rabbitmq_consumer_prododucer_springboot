@@ -9,7 +9,7 @@ import com.example.demo.dto.OrderStatus;
 @Component
 public class Consumer {
 
-    //@RabbitListener(queues = MessagingConfig.QUEUE)
+    @RabbitListener(queues = MessagingConfig.QUEUE)
     public void consumeMessageFromQueue(OrderStatus orderStatus) {
         System.out.println("Message recieved from queue : " + orderStatus);
     }
